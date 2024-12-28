@@ -4,6 +4,7 @@ document.querySelectorAll(".js-btnNum").forEach((button) => {
     let calNumber = button.innerHTML;
 
     displayNum.value += calNumber;
+    console.log(displayNum.value);
   });
 });
 
@@ -13,6 +14,17 @@ document.querySelectorAll(".js-mathbtn").forEach((button) => {
 
     displayNum.value += mathOp;
 
+    console.log(displayNum.value);
+    
+
 
   });
 });
+
+
+
+document.querySelector(".js-clear-button").addEventListener('click', ()=>{
+  displayNum.value = '';
+});
+
+
